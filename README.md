@@ -4,7 +4,7 @@
   <img src="https://freesvg.org/img/tic-tac-toe.png" width="350">
 </p>
 
-This is a classic board game made in Angular.
+This is a classic game made in Angular.
 
 ## Development server
 
