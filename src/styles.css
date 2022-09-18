@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+
+.sup {
+    text-align: center;
+    color: white;
+    font-family: 'Galindo';
+}
+
+h1 {
+    font-weight: bold;
+}
+
+
+body {
+    background-color: rgb(56, 56, 56);
+}
