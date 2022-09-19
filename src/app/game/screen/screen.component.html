@@ -15,15 +15,14 @@
 
 <div class="board" #board>
     
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
-    
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s1')" #s1></button>
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s2')" #s2></button>
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s3')" #s3></button>
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s4')" #s4></button>
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s5')" #s5></button>
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s6')" #s6></button>
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s7')" #s7></button>
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s8')" #s8></button>
+    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s9')" #s9></button>
     
 </div>

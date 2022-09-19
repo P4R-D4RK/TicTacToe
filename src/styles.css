@@ -27,12 +27,13 @@ body {
    
 }
 
-img {
-    border: 1px solid white;
-}
-
 .square {
     width: 150px;
     height: 150px;
     padding: 0px;
+    border: 1px solid white;
+    border-radius: 0;
+    font-family: 'Galindo';
+    font-size: 50px;
+    color: white;
 }

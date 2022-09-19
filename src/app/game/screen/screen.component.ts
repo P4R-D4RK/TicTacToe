@@ -6,9 +6,14 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styles: [
   ]
 })
-export class ScreenComponent implements OnInit {
+export class ScreenComponent implements OnInit { 
+  
+  @ViewChild('board') board!: ElementRef<HTMLDivElement>;
 
-  @ViewChild('board') myboard!: ElementRef<HTMLDivElement>;
+
+  state: boolean = false;
+  finished: boolean = true;
+  symbol: number = 0;
 
   constructor() {
     
@@ -19,7 +24,36 @@ export class ScreenComponent implements OnInit {
   }
 
   Start() {
-    console.log(this.myboard.nativeElement);
+    this.state = true;
+    this.finished = false;
+
+  }
+
+  Set( square: string) {
+
+    if( this.symbol === 0 ){
+
+      switch(square){
+        case('s1'):
+          this.board.nativeElement.children[0].textContent = 'X';
+          break
+
+          
+          
+      }
+      this.symbol = 1; 
+    }
+    else {
+      
+      switch(square){
+        case('s1'):
+        this.board.nativeElement.children[0].textContent = 'O';
+          break
+       
+      }
+
+      this.symbol = 0;
+    }
   }
 
 }
