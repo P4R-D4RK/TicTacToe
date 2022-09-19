@@ -6,22 +6,24 @@
     <h3>Let's play a classic game! </h3>
     
     <br>
-    <button class="btn btn-warning">
+    <button class="btn btn-warning"
+            (click)="Start()">
         Start
     </button>
 
 </div>
 
-<div class="board">
+<div class="board" #board>
     
-        <button class="square"></button>
-        <button class="square"></button>
-        <button class="square"></button>
-        <button class="square"></button>
-        <button class="square"></button>
-        <button class="square"></button>
-        <button class="square"></button>
-        <button class="square"></button>
-        <button class="square"></button>
- 
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    <button class="btn square" disabled><img src="./assets/tr.png" alt=""></button>
+    
+    
 </div>

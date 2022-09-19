@@ -24,13 +24,15 @@ body {
     margin-top: 20px;
     width: 450px;
     height: 450px;
+   
+}
 
+img {
+    border: 1px solid white;
 }
 
 .square {
-    background-color: transparent;
-    border-color: white;
-    color: white;
-    width: 33.33%;
-    height: 148px;
+    width: 150px;
+    height: 150px;
+    padding: 0px;
 }
