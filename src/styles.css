@@ -3,6 +3,7 @@
     text-align: center;
     color: white;
     font-family: 'Galindo';
+    margin-top: 20px;
 }
 
 h1 {
@@ -12,4 +13,24 @@ h1 {
 
 body {
     background-color: rgb(56, 56, 56);
+}
+
+.board {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 20px;
+    width: 450px;
+    height: 450px;
+
+}
+
+.square {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    width: 33.33%;
+    height: 148px;
 }
