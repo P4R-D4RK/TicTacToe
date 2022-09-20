@@ -15,14 +15,13 @@
 
 <div class="board" #board>
     
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s1')" #s1></button>
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s2')" #s2></button>
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s3')" #s3></button>
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s4')" #s4></button>
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s5')" #s5></button>
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s6')" #s6></button>
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s7')" #s7></button>
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s8')" #s8></button>
-    <button class="btn square" [disabled]="!state ? 'disabled' : null " (click)="Set('s9')" #s9></button>
-    
-</div>
+    <button class="btn square" [disabled]="!state[0] ? 'disabled' : null " (click)="Set(0)" #s1></button>
+    <button class="btn square" [disabled]="!state[1] ? 'disabled' : null " (click)="Set(1)" #s2></button>
+    <button class="btn square" [disabled]="!state[2] ? 'disabled' : null " (click)="Set(2)" #s3></button>
+    <button class="btn square" [disabled]="!state[3] ? 'disabled' : null " (click)="Set(3)" #s4></button>
+    <button class="btn square" [disabled]="!state[4] ? 'disabled' : null " (click)="Set(4)" #s5></button>
+    <button class="btn square" [disabled]="!state[5] ? 'disabled' : null " (click)="Set(5)" #s6></button>
+    <button class="btn square" [disabled]="!state[6] ? 'disabled' : null " (click)="Set(6)" #s7></button>
+    <button class="btn square" [disabled]="!state[7] ? 'disabled' : null " (click)="Set(7)" #s8></button>
+    <button class="btn square" [disabled]="!state[8] ? 'disabled' : null " (click)="Set(8)" #s9></button>
+div>
