@@ -38,3 +38,19 @@ body {
     color: white;
 }
 
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    color: rgb(255,202,44);
+    border-color: darkgray;
+}
+
+.msg {
+    font-family: 'Galindo';
+    color: white;
+    text-align: center;
+    margin-top: 500px;
+    font-size: 30px;
+}
+
+strong {
+    color: rgb(255,202,44);
+}

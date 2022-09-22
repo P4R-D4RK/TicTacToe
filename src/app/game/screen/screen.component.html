@@ -7,6 +7,7 @@
     
     <br>
     <button class="btn btn-warning"
+            *ngIf="finished"
             (click)="Start()">
         Start
     </button>
@@ -15,13 +16,22 @@
 
 <div class="board" #board>
     
-    <button class="btn square" [disabled]="!state[0] ? 'disabled' : null " (click)="Set(0)" #s1></button>
-    <button class="btn square" [disabled]="!state[1] ? 'disabled' : null " (click)="Set(1)" #s2></button>
-    <button class="btn square" [disabled]="!state[2] ? 'disabled' : null " (click)="Set(2)" #s3></button>
-    <button class="btn square" [disabled]="!state[3] ? 'disabled' : null " (click)="Set(3)" #s4></button>
-    <button class="btn square" [disabled]="!state[4] ? 'disabled' : null " (click)="Set(4)" #s5></button>
-    <button class="btn square" [disabled]="!state[5] ? 'disabled' : null " (click)="Set(5)" #s6></button>
-    <button class="btn square" [disabled]="!state[6] ? 'disabled' : null " (click)="Set(6)" #s7></button>
-    <button class="btn square" [disabled]="!state[7] ? 'disabled' : null " (click)="Set(7)" #s8></button>
-    <button class="btn square" [disabled]="!state[8] ? 'disabled' : null " (click)="Set(8)" #s9></button>
-div>
+    <button class="btn square" [disabled]="!state[0] ? 'disabled' : null " (click)="Set(0); Check()" #s1></button>
+    <button class="btn square" [disabled]="!state[1] ? 'disabled' : null " (click)="Set(1); Check()" #s2></button>
+    <button class="btn square" [disabled]="!state[2] ? 'disabled' : null " (click)="Set(2); Check()" #s3></button>
+    <button class="btn square" [disabled]="!state[3] ? 'disabled' : null " (click)="Set(3); Check()" #s4></button>
+    <button class="btn square" [disabled]="!state[4] ? 'disabled' : null " (click)="Set(4); Check()" #s5></button>
+    <button class="btn square" [disabled]="!state[5] ? 'disabled' : null " (click)="Set(5); Check()" #s6></button>
+    <button class="btn square" [disabled]="!state[6] ? 'disabled' : null " (click)="Set(6); Check()" #s7></button>
+    <button class="btn square" [disabled]="!state[7] ? 'disabled' : null " (click)="Set(7); Check()" #s8></button>
+    <button class="btn square" [disabled]="!state[8] ? 'disabled' : null " (click)="Set(8); Check()" #s9></button>
+
+</div>
+
+<div *ngIf="winner!==''" class="msg">
+    <p>The winner is <strong>{{ winner }}</strong> !</p>
+</div>
+
+<div *ngIf="drawv" class="msg">
+    <p>It's a <strong>draw</strong> !</p>
+</div>
