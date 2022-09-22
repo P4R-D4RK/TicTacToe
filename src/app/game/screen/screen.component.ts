@@ -121,14 +121,15 @@ export class ScreenComponent implements OnInit {
     
 
     //  Draw
-    for (let i=0; i<9; i++) {
-      if(this.board.nativeElement.children[i].textContent === ''){
-        this.drawv = false;
-        break
-      }
+    if(this.winner === '')
+      for (let i=0; i<9; i++) {
+        if(this.board.nativeElement.children[i].textContent === ''){
+          this.drawv = false;
+          break
+        }
 
-      this.drawv = true;
-    }
+        this.drawv = true;
+      }
 
     if(this.drawv)
       this.GameFinished('');
