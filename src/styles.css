@@ -6,7 +6,7 @@
     margin-top: 20px;
 }
 
-h1 {
+h2 {
     font-weight: bold;
 }
 
@@ -38,6 +38,10 @@ body {
     color: white;
 }
 
+.sup button {
+    margin-top: 5px;
+}
+
 .btn.disabled, .btn:disabled, fieldset:disabled .btn {
     color: rgb(255,202,44);
     border-color: darkgray;
@@ -48,7 +52,7 @@ body {
     color: white;
     text-align: center;
     margin-top: 500px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 strong {

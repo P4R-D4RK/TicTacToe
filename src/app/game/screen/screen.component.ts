@@ -138,12 +138,22 @@ export class ScreenComponent implements OnInit {
 
   GameFinished(w: string) {
 
+    w == '' ? this.DSound() : this.WSound() ;
     this.state.forEach( (_,i) => {
       this.state[i] = false;
     });
     this.winner = w;
     this.finished = true;
-    
+  }
+
+  WSound() {
+  const audio = new Audio('assets/w_sound.wav');
+    audio.play();
+  }
+
+  DSound() {
+  const audio = new Audio('assets/d_sound.wav');
+    audio.play();
   }
 
 }
