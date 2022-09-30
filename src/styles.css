@@ -58,3 +58,7 @@ body {
 strong {
     color: rgb(255,202,44);
 }
+
+.line {
+    color: green;
+}
